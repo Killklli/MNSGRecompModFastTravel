@@ -1,0 +1,34 @@
+# Config file for an example Majora's Mask: Recompiled mod.
+
+# Fields that end up in the mod's manifest.
+[manifest]
+# Unique ID of this mod. Pick something long enough that it'll never be the same as any other mod.
+# The name displayed in the mod management menu is separate from this so this doesn't need to be human readable.
+id = "mnsg_fast_travel"
+# Version of this mod.
+version = "1.0.0"
+# The name that will show up for this mod in the mod menu. This should be human readable.
+display_name = "Fast Travel"
+# The description that will show up when this mod is displayed in the mod menu. This should be human readable.
+description =  "Dragon Fast Travel Modifier"
+# A short description that will show up in this mod's entry in the mod list. This should be human readable and kept short
+# to prevent it from being cut off due to the limited space.
+short_description = "Dragon Fast Travel Modifier"
+# Authors of this mod.
+authors = [ "Killklli" ]
+# ID of the target recomp game.
+game_id = "mnsg"
+# Minimum version of the target recomp (e.g. Zelda 64: Recompiled) that this mod can run on.
+minimum_recomp_version = "0.1.0"
+
+# Inputs to the mod tool.
+[inputs]
+# Input elf file to generate a mod from.
+elf_path = "build/mod.elf"
+# Output mod filename.
+mod_filename = "mnsg_fast_travel"
+# Reference symbol files.
+func_reference_syms_file = "Goemon64RecompSyms/mnsg.us.syms.toml"
+data_reference_syms_files = [ "Goemon64RecompSyms/mnsg.us.datasyms.toml" ]
+# Additional files to include in the mod.
+additional_files = [ ]
